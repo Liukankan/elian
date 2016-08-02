@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>驿联官方网站</title>
+  <link rel="shortcut icon" type="text/css" href="../img/elian.ico">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+  <style type="text/css">
+  body{background-color: #ececec;}
+  	#body{padding-top: 144px;}
+  	.font-yh{text-align: center;}
+    .news-cont{line-height: 2.5em;}
+    .news-cont h3{padding-top: 20px;padding-right: 8px;padding-left: 8px;color: #0062ab;line-height: 1.5em;font-size: 24px;}
+    .news-cont span{margin: 10px;}
+ 	  .news-cont p{margin: 16px 0;}
+    .page a{margin: 0 15px;}
+  </style>
+ </head>
+ <body>
+   <div id='header'>
+     <nav class="navbar navbar-default navbar-fixed-top ">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button class="navbar-toggle" data-target="#example-navbar-collapse" data-toggle="collapse" type="button">
+           <span class="sr-only">切换导航</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="../index.html" style='height:88px;position: relative;top:0px;'>
+             <img src="../img/logo.png">
+           </a>
+         </div>
+         <div id="example-navbar-collapse" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="../index.html">首页</a></li>
+             <li><a href="../download.html">APP下载</a></li>
+             <li><a href="../javascript:;">驿路相伴</a></li>
+             <li><a href="../product.html">产品</a></li>
+             <li><a href="../case.html">成功案例</a></li>
+             <li><a href="news/1">新闻</a></li>
+             <li><a href="../about.html">关于驿联</a></li>
+             <li><a target="_blank" href="http://58.213.118.23:8081/elink-system-web">管理平台</a></li>
+             <li><a target="_blank" href="user_register.html">个人中心</a></li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </div>
+   <div id='body' class="container">
+   	<section style="min-height: 900px;" class="elian-news">
+      <div class="container">
+        <div class='row'>
+          <div class="col-sm-12 col-md-9  font-yh">
+                <div class="news-cont panel panel-default">
+                  <div>
+                    <h3>驿路有电 驿联电动汽车充电APP发布会</h3>
+                    <span>11月19日上午10时，珠海驿联新能源汽车有限公司在珠海中海诺富特酒店召开名为“驿路有电”的新品发布会，推出一款名为“驿充电”的电动汽车充电APP。 驿联新产品发布会，首款电动汽车充电APP惊艳亮相！ 现场惊喜连连，创意无限 &nbsp;&nbsp;&nbsp;&nbsp;与一般的发布会在纸上签到不同，此次发布会是安排在一辆高档白色的新能源汽  .....</span>
+                    <div>              
+                    <p>
+                      <a href="javascript:;" class="btn btn-lg btn-primary">阅读全文</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="news-cont panel panel-default">
+                  <div>
+                    <h3>房车展首日精彩无限 陈昊董事长接受珠海TV采访</h3>
+                    <span>&nbsp;“房车联展嘉年华”第一天，在暴晒的天气与客户的热情中渐渐远去，驿联君的小伙伴们，为了更好地为客户提供优质服务，嗓子都或多或少出现了些问题，尤其是两位销售哥哥，时间过午便要含着润喉片进行讲解，驿联君要在这里为他们点个赞。 ,]] 驿联君现今诚邀加盟商，千载难逢躺着赚钱的好机会，千万不要错过呦。 只要您拥  .....</span>
+                    <div>              
+                    <p>
+                      <a href="javascript:;" class="btn btn-lg btn-primary">阅读全文</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="news-cont panel panel-default">
+                  <div>
+                    <h3>驿联邀您共度五一假期 房车联展嘉年华约么？</h3>
+                    <span>珠海驿联新能源汽车有限公司将在“五一”期间参加“珠海房车联展嘉年华”，此次驿联将携北汽EV200及奇瑞eQ新能源电动车参展。 现场不仅有帅帅的销售哥哥现场讲解电动车的各种优势、还有萌萌的大白等您抱回家，亲，五一珠海体育中心v8展位，约么？ 劲享三重礼，实惠大礼现场派送! 一重礼：进店免费礼 无需消费，进  .....</span>
+                    <div>              
+                    <p>
+                      <a href="javascript:;" class="btn btn-lg btn-primary">阅读全文</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+            <nav class='page'>
+              <ul class="pagination pagination-lg">
+                <li class='disabled'>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class='active'><a href="#">1</a></li>
+                <li class="disabled">
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div> 
+          <div class="btn-group-vertical hidden-sm col-md-3 font-yh affix">
+            <a href="1" class='btn btn-primary'>
+                <h3 style="margin-top: 2px;">企业新闻</h3>
+            </a>
+            <a href="2" class='btn btn-default'>
+              <h3>行业新闻</h3>
+            </a>
+            <a href="javascript:;" class='btn btn-default'>
+              <h3>企业活动</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+   <div id='footer'>
+     <div class="container">
+       <div class='row'>
+         <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
+           <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+             <div class="list-group">
+               <h2 href="#" class="list-group-item ">
+                 应用下载
+               </h2>
+               <a href="../download.html" target="_blank" class="list-group-item">Android</a>
+               <a href="../download.html" target="_blank" class="list-group-item">IOS</a>
+               <a href="../download.html" target="_blank" class="list-group-item">了解驿充电</a>
+             </div>
+           </div>
+           <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+             <div class="list-group">
+               <h2 href="#" class="list-group-item ">
+                 产品中心
+               </h2>
+               <a href="../product_1.html" target="_blank" class="list-group-item">直流快充系统</a>
+               <a href="../product_1.html" target="_blank" class="list-group-item">交流充电桩</a>
+               <a href="../product_1.html" target="_blank" class="list-group-item">换电站专用充电系统</a>
+             </div>
+           </div>
+           <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+             <div class="list-group">
+               <h2 href="#" class="list-group-item ">
+                 关于驿联
+               </h2>
+               <a href="../about.html" target="_blank" class="list-group-item">集团介绍</a>
+               <a href="../product.html" target="_blank" class="list-group-item">成功案例</a>
+               <a href="../about.html#jiaru" target="_blank" class="list-group-item">加入驿联</a>
+               <a href="../about.html#lianxi" target="_blank" class="list-group-item">联系我们</a>
+             </div>
+           </div>
+         </div>
+         <div class='col-lg-6 col-md-6 col-sm-6  col-xs-12 code'>
+           <div class='col-lg-6 col-md-6 col-sm-6 ' style='margin-bottom:10px;'>
+               <img src="../img/code-1.png">
+               <h2>驿充电APP</h2>
+           </div>
+           <div class='col-lg-6 col-md-6 col-sm-6'>
+               <img src="../img/code-2.png">
+               <h2>驿充电官方微信</h2>
+           </div>
+         </div>
+       </div>
+       <div class='row coryright'>
+         <div class='col-lg-9 col-md-9 col-sm-9 col-ls-offset-1 col-md-offset-1  col-xs-12 '>
+           Copyright © 珠海驿联新能源汽车有限公司版权所有 备案许可证：<a href="http://www.miitbeian.gov.cn" >
+           粤ICP备15022833号</a>
+         </div>   
+         <div class='col-lg-2 col-md-2 col-sm-2 pull-right'>
+           <p>简体中文</p>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   
+ 	<script type="text/javascript" src='../js/jquery-1.12.4.min.js'></script>
+ 	<script type="text/javascript" src='../js/bootstrap.min.js'></script>
+ </body>
+ </html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>驿联官方网站</title>
+  <link rel="shortcut icon" type="text/css" href="img/elian.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+  <style type="text/css">
+  .contains{position: relative;}
+  .button-group{position: absolute;top: 800px;left: 800px;z-index: 100}
+  .btn-eliangreen_1,.btn-eliangreen_2{color: #ffffff;font-family: '微软雅黑';font-size: 20px;height: 65px;line-height: 65px;width: 190px;display: inline-block;text-align: center;}
+  .btn-eliangreen_1:hover,.btn-eliangreen_2:hover,.btn-eliangreen_1:focus,.btn-eliangreen_2:focus {color: #fff;}
+  
+  .group1 .btn-eliangreen_1{background-color: #93c5f4;border: 2px solid #93c5f4;}
+  .group1 .btn-eliangreen_2{border: 2px solid #93c5f4;}
+  .group1 .btn-eliangreen_1:hover,.group1 .btn-eliangreen_1:focus{background-color: #499ded;border: 2px solid #499ded;}
+  .group1 .btn-eliangreen_2:hover,.group1 .btn-eliangreen_2:focus{background-color: #499ded;}
+  ul {list-style: none;}
+  .pdt5 ul{padding-top: 57px;}
+  .elian-cont{text-align: center;}
+  .elian-up-phone{width: 100%;min-height: 687px;min-width: 1300px;}
+  .donw-about{padding-top: 228px;text-align: left;}
+  .donw-about ul{list-style: inherit;padding-top: 27px;}
+  .donw-about li{font-size: 18px;line-height: 50px;}
+  .hidden-sm {max-height: 700px;overflow: hidden;}
+  .elian-details-1 li,.elian-details-2 li,.elian-details-3 li,.elian-details-4 li,.elian-details-5 li,.elian-details-6 li{float: left;}
+  .elian-details-1 img,.elian-details-2 img,.elian-details-3 img,.elian-details-4 img,.elian-details-5 img,.elian-details-6 li{margin-top: 25px;}
+  .light-point1,.light-point2,.light-point3,.light-point4,.light-point5,.light-point6{position: absolute;display: none;}
+  .light-point1{top: 100px;left: 80px;display: block;}
+  .light-point3{top: 300px;left: 80px;display: block;}
+  .light-point5{top: 500px;left: 180px;display: block;}
+
+  .light-point2{top: 100px;left: 680px;display: block;}
+  .light-point4{top: 300px;left: 680px;display: block;}
+  .light-point6{top: 500px;left: 680px;display: block;}
+  @keyframes bounceInUp {
+    0% {
+      top: 9000px
+    }
+    100%{
+      top: 0px;
+    }
+  }
+
+  @-webkit-keyframes bounceInUp
+  /*Safari and Chrome*/
+
+  {
+    0% {
+      top: 9000px
+    }
+    100%{
+      top: 0px;
+    }
+  }
+
+  /**由左往右出现**/
+
+  @keyframes bounceInLeft {
+    from {
+      left: -9000px
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  @-webkit-keyframes bounceInLeft
+  /*Safari and Chrome*/
+
+  {
+    from {
+      left: -9000px
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  /**由右往左出现**/
+
+  @keyframes bounceInRight {
+    from {
+      left: 9000px
+    }
+    to {
+      left: 680px;
+    }
+  }
+
+  @-webkit-keyframes bounceInRight
+  /*Safari and Chrome*/
+
+  {
+    from {
+      left: 9000px;
+    }
+    to {
+      left: 680px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div id='header'>
+    <nav class="navbar navbar-default navbar-fixed-top ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target="#example-navbar-collapse" data-toggle="collapse" type="button">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style='height:88px;position: relative;top:0px;'>
+            <img src="img/logo.png">
+          </a>
+        </div>
+        <div id="example-navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="download.html">APP下载</a></li>
+            <li><a href="javascript:;">驿路相伴</a></li>
+            <li><a href="product.html">产品</a></li>
+            <li><a href="case.html">成功案例</a></li>
+            <li><a href="news/1">新闻</a></li>
+            <li><a href="about.html">关于驿联</a></li>
+            <li><a target="_blank" href="http://58.213.118.23:8081/elink-system-web">管理平台</a></li>
+            <li><a target="_blank" href="user_register.html">个人中心</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id='body'>
+    <div calss='contains'>
+      <div class='section1'>
+        <img src="img/banner-download.jpg">
+        <div class="button-group group1">
+          <a href="apk/ev-link.apk" class="btn-eliangreen_1">Android</a>
+          <a target="_blank" href="https://itunes.apple.com/cn/app/yi-chong-dian/id1047577641?mt=8" class="btn-eliangreen_2">IOS</a>
+        </div>
+      </div>
+      <section style="background-color: #FFFFFF;" class="elian-cont app_overview">
+            <div class="elian-title">
+              <div class="container">
+                <div style="position: relative;animation: bounceInUp 1s infinite;animation-delay:0.1s;animation-iteration-count: 1;" class="col-xs-12">
+                  <a name="app"></a>
+                  <h2>APP 概述</h2>
+                  <h3>驿充电可以为你做以下事情以便提高充电效率</h3>
+                  <h5>EV-LINK can do for you the following things in order to improve the charging efficiency</h5>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="elian-details">
+              <div class="container">
+                <div class="col-xs12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.5s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-1.png"></li>
+                    <li>
+                      <h2>快捷注册</h2>
+                      <h4>轻松注册，一个验证码搞定</h4>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.5s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-2.png"></li>
+                    <li>
+                      <h2>摇一摇</h2>
+                      <h4>快速充电找桩只需摇一摇</h4>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-xs12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.6s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-3.png"></li>
+                    <li>
+                      <h2>语音播报</h2>
+                      <h4>语音引导驾驶到充电桩处</h4>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.7s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-4.png"></li>
+                    <li>
+                      <h2>扫码充电</h2>
+                      <h4>无需输入账号，扫码完成验证</h4>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.8s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-5.png"></li>
+                    <li>
+                      <h2>快捷支付</h2>
+                      <h4>手机、银联支付宝多方支付</h4>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 pdt5">
+                  <ul style="position: relative;animation: bounceInUp 2s infinite;animation-delay:0.9s;animation-iteration-count: 1;">
+                    <li><img src="img/down-icon-6.png"></li>
+                    <li>
+                      <h2>消费记录</h2>
+                      <h4>消费记录一目了然</h4>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section class="elian-cont elian-up-phone" style="background-color: #ececec;">
+        <div class="elian-title">
+          <div class="container">
+            <div class="col-xs-12">
+              <h2>特色功能</h2>
+              <h3>驿充电所具备的特色功能为您一路护航</h3>
+              <h5>EV-LINK have exclusive function for your escort all the way,improve the charging efficiency</h5>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center;" class="elian-details">
+          <div style="position: absolute;width: 100%; padding:0 0% 0 0%; " class="container app_features">
+            <div style="animation: bounceInRight 2s infinite;animation-delay:2s;animation-iteration-count: 1;" class="light-point1 clearfix">
+              <ul class="elian-details-1">
+                <li>
+                  <h3>分时段柔性预约</h3>
+                  <h5>保证桩的最大化使用</h5>
+                  <h5>提高桩的使用效率,避免用户充电等待的时间</h5>
+                  <h5>根据出行计划，合理安排充电</h5>
+                  <h5>充电有时间保障</h5>
+                </li>
+                <li><img src="img/line-1.png"></li>
+              </ul>
+            </div>
+            <div style="animation: bounceInLeft 2s infinite;animation-delay:2s;animation-iteration-count: 1;" class="light-point2 clearfix">
+              <ul class="elian-details-2">
+                <li><img src="img/line-1.png"></li>
+                <li>
+                  <h3>实时在线查询状态</h3>
+                  <h5>查看充电时长</h5>
+                  <h5>已充电量</h5>
+                  <h5>剩余充电时长</h5>
+                  <h5>占位情况</h5>
+                </li>
+              </ul>
+            </div>
+            <div style="animation: bounceInRight 2s infinite;animation-delay:2.4s;animation-iteration-count: 1;" class="light-point3 clearfix">
+              <ul class="elian-details-3">
+                <li>
+                  <h3>主动性安全充电提醒</h3>
+                  <h5>充电预约到时提醒</h5>
+                  <h5>充电进度监控</h5>
+                  <h5>充满提醒</h5>
+                  <h5>精准的充电安全控制</h5>
+                </li>
+                <li><img src="img/line-2.png"></li>
+              </ul>
+            </div>
+            <div style="animation: bounceInLeft 2s infinite;animation-delay:2.4s;animation-iteration-count: 1;" class="light-point4">
+              <ul class="elian-details-4 clearfix">
+                <li><img src="img/line-2.png"></li>
+                <li>
+                  <h3>实时在线查询状态</h3>
+                  <h5>查看充电时长</h5>
+                  <h5>已充电量</h5>
+                  <h5>剩余充电时长</h5>
+                  <h5>占位情况</h5>
+                </li>
+              </ul>
+            </div>
+            <div style="animation: bounceInRight 2s infinite;animation-delay:2.8s;animation-iteration-count: 1;" class="light-point5">
+              <ul class="elian-details-5 clearfix">
+                <li>
+                  <h3>嵌入式精准导航</h3>
+                  <h5>找不到桩所在地</h5>
+                  <h5>桩是否可用</h5>
+                  <h5>通过订单一键导航</h5>
+                </li>
+                <li><img src="img/line-1.png"></li>
+              </ul>
+            </div>
+            <div style="animation: bounceInLeft 2s infinite;animation-delay:2.8s;animation-iteration-count: 1;" class="light-point6">
+              <ul class="elian-details-6 clearfix">
+                <li><img src="img/line-1.png"></li>
+                <li>
+                  <h3>个性化加盟分享</h3>
+                  <h5>成为桩主</h5>
+                  <h5>个人性质加盟</h5>
+                  <h5>公司性质加盟</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img class='elian-up-phone' src="img/down-fun-bg.png">
+        </div>
+      </section>
+      <section class="elian-cont ">
+        <div class="elian-title">
+          <div class="container">
+            <div style="position: relative;animation: bounceInUp 2s infinite;animation-delay:3s;animation-iteration-count: 1;" class="hidden-sm  hidden-xs col-md-6">
+              <img style="padding-top: 5%;" src="img/down-fun-phone.png">
+            </div>
+            <div style="position: relative;animation: bounceInRight 2s infinite;animation-delay:4s;animation-iteration-count: 1;" class="col-sm-12 col-md-6 donw-about">
+              <h2>特色功能</h2>
+              <h3>驿充电所具备的专属功能为您一路护航</h3>
+              <h5>EV-LINK have exclusive function for your escort all the way,improve the charging efficiency</h5>
+              <ul>
+                <li>在家、办公室可以使用web预约</li>
+                <li>在路上可以使用APP预约</li>
+                <li>开车的时候可以摇一摇预约</li>
+                <li>用户可自行制定充电计划</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="elian-cont elian-down-phone down-about">
+        <div class="elian-title">
+          <div class="container">
+            <div style="position: relative;animation: bounceInUp 2s infinite;animation-delay:5s;animation-iteration-count: 1;" class="col-xs-12 pdt5">
+              <h2>特色功能</h2>
+              <h3>驿充电所具备的专属功能为您一路护航</h3>
+              <h5>EV-LINK have exclusive function for your escort all the way,improve the charging efficiency</h5>
+            </div>
+            <div class="col-xs-12">
+              <img  src="img/down-fun-bg1.png">
+            </div>          
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id='footer'>
+    <div class="container">
+      <div class='row'>
+        <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
+          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+            <div class="list-group">
+              <h2 href="#" class="list-group-item ">
+                应用下载
+              </h2>
+              <a href="download.html" target="_blank" class="list-group-item">Android</a>
+              <a href="download.html" target="_blank" class="list-group-item">IOS</a>
+              <a href="download.html" target="_blank" class="list-group-item">了解驿充电</a>
+            </div>
+          </div>
+          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+            <div class="list-group">
+              <h2 href="#" class="list-group-item ">
+                产品中心
+              </h2>
+              <a href="product_1.html" target="_blank" class="list-group-item">直流快充系统</a>
+              <a href="product_1.html" target="_blank" class="list-group-item">交流充电桩</a>
+              <a href="product_1.html" target="_blank" class="list-group-item">换电站专用充电系统</a>
+            </div>
+          </div>
+          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+            <div class="list-group">
+              <h2 href="#" class="list-group-item ">
+                关于驿联
+              </h2>
+              <a href="about.html" target="_blank" class="list-group-item">集团介绍</a>
+              <a href="product.html" target="_blank" class="list-group-item">成功案例</a>
+              <a href="about.html#jiaru" target="_blank" class="list-group-item">加入驿联</a>
+              <a href="about.html#lianxi" target="_blank" class="list-group-item">联系我们</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-6 col-md-6 col-sm-6  col-xs-12 code'>
+          <div class='col-lg-6 col-md-6 col-sm-6 ' style='margin-bottom:10px;'>
+              <img src="img/code-1.png">
+              <h2>驿充电APP</h2>
+          </div>
+          <div class='col-lg-6 col-md-6 col-sm-6'>
+              <img src="img/code-2.png">
+              <h2>驿充电官方微信</h2>
+          </div>
+        </div>
+      </div>
+      <div class='row coryright'>
+        <div class='col-lg-9 col-md-9 col-sm-9 col-ls-offset-1 col-md-offset-1  col-xs-12 '>
+          Copyright © 珠海驿联新能源汽车有限公司版权所有 备案许可证：<a href="http://www.miitbeian.gov.cn" >
+          粤ICP备15022833号</a>
+        </div>   
+        <div class='col-lg-2 col-md-2 col-sm-2 pull-right'>
+          <p>简体中文</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+	<script type="text/javascript" src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+  <script type="text/javascript">
+  $(function () {
+    //  $('.carousel').carousel({
+    //   interval: 2000
+    // });
+  })
+       
+  </script>
+</body>
+</html>

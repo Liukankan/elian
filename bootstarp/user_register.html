@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>驿联官方网站</title>
+  <link rel="shortcut icon" type="text/css" href="img/elian.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+
+  <style type="text/css">
+    .container{position: absolute;width: 100%;height: 800px;background: url(img/logo_bg.jpg) no-repeat;background-size: 110% 100%;}
+    .register-box{ background: rgba(255, 255, 255, 0.95);border-radius: 3px;height: 380px;left: 55%;position: absolute;top: 25%;width: 396px;text-align: center;}
+    .form{width: 80%;margin: 0 auto;margin-top: 30px;}
+    .panel{background: rgba(255, 255, 255, 0.95);border-radius: 3px;margin: auto;width: 400px;margin-top: 10%;}
+  </style>
+  <script type="text/javascript" src='js/jquery-1.12.4.min.js'></script>
+  <script type="text/javascript" src='js/bootstrap.min.js'></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ </head>
+ <body>
+   <div class="container">
+    <div class="panel panel-default">
+      
+      <div class="panel-body">
+        <form id="signupForm" method="post" class="form-horizontal" action="">
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="phoneNum">手机：</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="phoneNum" name="phoneNum" placeholder="请输入手机号" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="password">密码：</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="password" name="password" placeholder="请输入六位数字密码" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="valid_code">验证码：</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" id="valid_code" name="valid_code" placeholder="请输入验证码" /> 
+            </div>
+            <button type="button" class="btn btn-primary col-sm-6" style='width: auto;'>获取验证码</button>
+          </div>
+
+          <div class="form-group" style="margin-top: 35px;">
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-success" style='width: 100%;'>立即注册</button>
+            </div>
+          </div>
+          <div align="center" style="margin-top: 50px;">
+            已经是会员了？那么<a href="javascript:;">返回登录</a>
+          </div>
+        </form>
+      </div>
+    </div>
+        <!-- <div class="register-box">
+          <form class='form'>
+            <div class="form-group">
+              <label for="exampleInputEmail1"></label>
+              <input type="email" class="form-control" id="exampleInputPhone" placeholder="请输入手机号">
+            </div>
+            <div class="form-group">
+              <label for=""></label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="请输入六位数字密码">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail"></label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="请输入验证码" style='width: auto; display: inline-block;'>
+                <button type="button" class="btn btn-primary" style='width: auto;'>免费获取验证码</button>
+              </div>
+              
+            <button type="submit" class="btn btn-success" style='width: 100%;'>立即注册</button>
+          </form>
+          <div align="center" style="margin-top: 50px;">
+            已经是会员了？那么<a onclick="back()" href="javascript:void(0)">返回登录</a>
+          </div>
+        </div>  -->
+    </div>
+   
+ 	
+  <script type="text/javascript">
+  $.validator.setDefaults( {
+    submitHandler: function () {
+      alert( "submitted!" );
+    }
+  } );
+    $(function(){
+      // jQuery.validator.addMethod("url", function(value, element,params) {
+      //   // allow any non-whitespace characters as the host part
+      //   return this.optional( element ) || /^\d{6}$/.test( value );
+      // }, '666.');
+
+      $( "#signupForm" ).validate( {
+        rules: {
+            phoneNum: {
+              required: true,
+              rangelength: [11, 11],
+              number: true
+              },
+            password: {
+              required: true,
+              rangelength: [6, 6],
+              number: true
+            },
+            valid_code: {
+              required: true,
+              rangelength: [4, 4],
+              number: true
+              // url: true
+            }
+          },
+          messages: {
+            phoneNum: {
+              required: "请输入11位数字",
+              rangelength: "请输入11位数字",
+              number: "请输入11位数字"
+            },
+            password: {
+              required: "请输入6位数字",
+              rangelength: "请输入6位数字",
+              number: "请输入6位数字"
+            },
+            valid_code: {
+              required: "请输入4位验证码",
+              rangelength: "请输入4位验证码",
+              number: "请输入4位数字验证码"
+            },
+          },
+          errorElement: "em",
+          errorPlacement: function ( error, element ) {
+            error.addClass( "help-block" );
+            element.parent().addClass( "has-feedback" );
+            error.insertAfter( element );
+            if ( !element.next( "span" )[ 0 ] ) {
+              $( "<span class='glyphicon glyphicon-remove form-control-feedback'></span>" ).insertAfter( element );
+            }
+          },
+          success: function ( label, element ) {
+            if ( !$( element ).next( "span" )[ 0 ] ) {
+              $( "<span class='glyphicon glyphicon-ok form-control-feedback'></span>" ).insertAfter( $( element ) );
+            }
+          },
+          highlight: function ( element, errorClass, validClass ) {
+            $( element ).parent().addClass( "has-error" ).removeClass( "has-success" );
+            $( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
+          },
+          unhighlight: function ( element, errorClass, validClass ) {
+            $( element ).parent().addClass( "has-success" ).removeClass( "has-error" );
+            $( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
+          }
+        }
+       );
+    });
+  </script>
+ </body>
+ </html>
